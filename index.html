@@ -1,0 +1,127 @@
+<html>
+<head>
+	<title>Gesture Audio Controller</title>
+	<link rel="stylesheet" type="text/css" href="./app.css">
+</head>
+<body>
+
+<canvas id="audio-visualisation"></canvas>
+
+<a id="github-link" href=""><i class="icon-github-circled"></i></a>
+
+<div id="content">
+	<div id="slider-controls" class="clearfix">
+		<div class="control-category">
+			<div class="category-title">Audio</div>
+			<div class="slider-group clearfix">
+                <div class="slider">
+                    <input type="range" orient="vertical" min="0" max="1" step="0.01" value="1" id="audio-volume" />
+                    <div class="slider-label">Volume</div>
+                    <div class="slider-checkbox">
+                    	<input type="checkbox" id="audio-volume-checkbox">
+                    	<label for="audio-volume-checkbox" class="checkbox-label">
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="control-category">
+			<div class="category-title">Delay</div>
+			<div class="slider-group clearfix">
+                <div class="slider">
+                    <input type="range" orient="vertical" min="0" max="1" step="0.01" value="1" id="delay-feedback" />
+                    <div class="slider-label">Feedback</div>
+                    <div class="slider-checkbox">
+                    	<input type="checkbox" id="delay-feedback-checkbox">
+                    	<label for="delay-feedback-checkbox" class="checkbox-label">
+                    </div>
+                </div>
+                <div class="slider">
+                    <input type="range" orient="vertical" min="0" max="1" step="0.01" value="1" id="delay-time" />
+                    <div class="slider-label">Time</div>
+                    <div class="slider-checkbox">
+                    	<input type="checkbox" id="delay-time-checkbox">
+                    	<label for="delay-time-checkbox" class="checkbox-label">
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="control-category">
+			<div class="category-title">Flanger</div>
+			<div class="slider-group clearfix">
+                <div class="slider">
+                    <input type="range" orient="vertical" min="0" max="1" step="0.01" value="1" id="flanger-speed" />
+                    <div class="slider-label">Speed</div>
+                    <div class="slider-checkbox">
+                    	<input type="checkbox" id="flanger-speed-checkbox">
+                    	<label for="flanger-speed-checkbox" class="checkbox-label">
+                    </div>
+                </div>
+                <div class="slider">
+                    <input type="range" orient="vertical" min="0" max="1" step="0.01" value="1" id="flanger-depth" />
+                    <div class="slider-label">Depth</div>
+                    <div class="slider-checkbox">
+                    	<input type="checkbox" id="flanger-depth-checkbox">
+                    	<label for="flanger-depth-checkbox" class="checkbox-label">
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="control-category">
+			<div class="category-title">Low-pass filter</div>
+			<div class="slider-group clearfix">
+                <div class="slider">
+                    <input type="range" orient="vertical" min="0" max="1" step="0.01" value="1" id="low-pass-filter-frequency" />
+                    <div class="slider-label">Frequency</div>
+                    <div class="slider-checkbox">
+                    	<input type="checkbox" id="filter-frequency-checkbox">
+                    	<label for="filter-frequency-checkbox" class="checkbox-label">
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="control-category">
+			<div class="category-title">Distortion</div>
+			<div class="slider-group clearfix">
+                <div class="slider">
+                    <input type="range" orient="vertical" min="0" max="1" step="0.01" value="1" id="distortion-gain" />
+                    <div class="slider-label">Gain</div>
+                    <div class="slider-checkbox">
+                    	<input type="checkbox" id="distortion-gain-checkbox">
+                    	<label for="distortion-gain-checkbox" class="checkbox-label">
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+
+	<div id="leap-motion-indicator">
+		<div class="leap-motion-logo"></div>
+		<div class="leap-motion-line"></div>
+	</div>
+
+	<div id="instructions">Have a Leap Motion Controller? plug it in, check the boxes, and control the parameters with your hand.</div>
+
+    <div id="controls">
+        <div id="play-control"><i class="icon-play"></i></div>
+        <div id="pause-control"><i class="icon-pause"></i></div>
+    </div>
+</div>
+
+<footer>
+	<div class="left-content">
+		<div class="dolby-logo"></div>
+		<div class="dolby-text">Using audio Dolby Digital Plus</div>
+	</div>
+
+	<div class="right-content">
+		<div class="pizzicato-logo"></div>
+		<div class="pizzicato-text">Made with Pizzicato</div>
+	</div>
+</footer>
+
+<script src="./leap.js"></script>
+<script src="https://s3-us-west-1.amazonaws.com/dolbydeveloper/1.1.0/js/dolby.min.js"></script>
+<script src="./Pizzicato.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
