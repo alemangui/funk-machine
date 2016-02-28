@@ -1,12 +1,18 @@
-#Web audio demo
-This demo was created for a presentation at the [Paris.JS meetup](http://parisjs.org/). A working version can be found [here](http://alemangui.github.io/web-audio-demo/).
+#Funk machine
+A working version of this project can be found [here](https://alemangui.github.io/funk-machine/).
 
-## Leap motion device
+Funk machine is a way to control audio parameters and effects with gestures (when a Leap Motion controller is available) or simply by moving some sliders.
 
-If you have a Leap Motion device, connect it and you will be able to create higher pitches by raising your hand and lower ones by lowering it.
+## Audio effects
+Play around with the sliders to edit the effects in the ongoing track. 
 
-## Keyboard
-Start drum beat with 'q'. Keys 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k' and 'l' create sounds in the scale of G.
+## Using a Leap Motion controller
+
+If you have a Leap Motion device, connect it to control the effects with gestures. To select which elements to control, tick the checkbox under the desired sliders. More than one slider can be controlled at the same time.
+
+Simply move one hand up and down to control the checked sliders.
 
 ## External resources 
 This demo uses [Pizzicato.JS](https://github.com/alemangui/pizzicato) and [Leap.JS](http://github.com/leapmotion/leapjs/).
+
+Dolby Digital Plus audio format will be loaded where available.
