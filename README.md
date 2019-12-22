@@ -1,4 +1,4 @@
-#Funk machine
+# Funk machine
 A working version of this project can be found [here](https://alemangui.github.io/funk-machine/).
 
 Funk machine is a way to control audio parameters and effects with gestures (when a Leap Motion controller is available) or simply by moving some sliders.
