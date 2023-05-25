@@ -42,9 +42,9 @@
 	 **/
 	function initializeSounds() {
 		startWaitingScreen();
-		var drumsPath = Dolby.checkDDPlus() ? './audio/drums_Dolby.mp4' : './audio/drums.m4a';
-		var guitarsPath = Dolby.checkDDPlus() ? './audio/guitars_Dolby.mp4' : './audio/guitars.m4a';
-		var bassPath = Dolby.checkDDPlus() ? './audio/bass_Dolby.mp4' : './audio/bass.m4a';
+		var drumsPath = Dolby && Dolby.checkDDPlus() ? './audio/drums_Dolby.mp4' : './audio/drums.m4a';
+		var guitarsPath = Dolby && Dolby.checkDDPlus() ? './audio/guitars_Dolby.mp4' : './audio/guitars.m4a';
+		var bassPath = Dolby && Dolby.checkDDPlus() ? './audio/bass_Dolby.mp4' : './audio/bass.m4a';
 
 		drums = new Pizzicato.Sound({
 			source: 'file',
