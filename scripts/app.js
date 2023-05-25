@@ -1,5 +1,5 @@
 /* jshint undef: true, unused: true, eqeqeq: true*/
-/* globals Pizzicato, Leap, Dolby, window */
+/* globals Pizzicato, Leap, window */
 
 (function() {
 	'use strict';
@@ -36,15 +36,11 @@
 	var loadedTracks = 0;
 	initializeSounds();
 
-	/*
-	 * Load the different tracks. Dolby Digital Plus format will be 
-	 * used when available.
-	 **/
 	function initializeSounds() {
 		startWaitingScreen();
-		var drumsPath = Dolby && Dolby.checkDDPlus() ? './audio/drums_Dolby.mp4' : './audio/drums.m4a';
-		var guitarsPath = Dolby && Dolby.checkDDPlus() ? './audio/guitars_Dolby.mp4' : './audio/guitars.m4a';
-		var bassPath = Dolby && Dolby.checkDDPlus() ? './audio/bass_Dolby.mp4' : './audio/bass.m4a';
+		var drumsPath = './audio/drums.m4a';
+		var guitarsPath = './audio/guitars.m4a';
+		var bassPath = './audio/bass.m4a';
 
 		drums = new Pizzicato.Sound({
 			source: 'file',
